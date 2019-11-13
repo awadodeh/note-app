@@ -1,0 +1,13 @@
+################ backend
+**/.idea
+**/__pycache__/
+
+################ frontend
+# dependencies
+**/node_modules/
+.pnp
+.pnp.js
+
+# testing
+/coverage
+/build
