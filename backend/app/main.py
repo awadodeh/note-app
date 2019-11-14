@@ -10,8 +10,8 @@ from starlette.requests import Request
 from starlette.responses import Response
 from starlette.middleware.cors import CORSMiddleware
 
-from app import sqlalchemy_models, pydantic_models
 from app.database import SessionMaker, engine
+from app import sqlalchemy_models, pydantic_models
 
 
 # Dependency

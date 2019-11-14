@@ -18,10 +18,16 @@ class App extends Component {
     const { notes, selectedNote } = this.state;
 
     return (
-      <Container>
-        <NotePicker notes={notes} />
-        {selectedNote !== null && <NoteViewer note={notes[selectedNote]} />}
-      </Container>
+      <>
+        <Container>
+          <NotePicker notes={notes} />
+          {selectedNote !== null && <NoteViewer note={notes[selectedNote]} />}
+        </Container>
+        <div>
+          <h1>State</h1>
+          <p>{JSON.stringify(this.state)}</p>
+        </div>
+      </>
     );
   }
 }
