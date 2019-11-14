@@ -6,7 +6,7 @@ class NoteViewer extends Component {
     const { note } = this.props;
     return (
       <div>
-        <textarea disabled>{note.title}</textarea>
+        <p>{note.title}</p>
         <textarea disabled>{note.content}</textarea>
       </div>
     );
